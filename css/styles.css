@@ -83,7 +83,7 @@ section {
 
 .site-nav {
   display: flex;
-}
+  }
 
 .site-nav .item + .item {
   margin-left: 50px;
@@ -101,6 +101,7 @@ section {
 }
 
 .link-current {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--accent-color);
@@ -110,6 +111,18 @@ section {
 .link:focus,
 .link:hover {
   color: var(--accent-color);
+}
+
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+
 }
 
 /* contakt list */
@@ -369,7 +382,6 @@ section {
 
 .card {
 position: relative;
-
 }
 
 .card:hover {
@@ -691,6 +703,7 @@ position: relative;
   box-sizing: border-box;
   border: 1px solid #EEEEEE;
 }
+
 
 .list-card:focus,
 .list-card:hover {
