@@ -358,10 +358,45 @@ section {
 
 .subtitle-list {
   list-style: none; 
+  cursor: pointer;
+  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+  mix-blend-mode: normal;
 }
 
 .subtitle-main:nth-child(3n) {
   margin-right: 0px;
+}
+
+.card {
+position: relative;
+
+}
+
+.card:hover {
+  
+}
+
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 27px 107px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.card-text:hover {
+  cursor: pointer;
+  border-color: var(--accent-color);
 }
 
 /* Наша команда */
@@ -623,6 +658,8 @@ section {
   letter-spacing: 0.06em;
 }
 
+
+
 .project-link {
   margin-top: 20px;
   margin-left: 24px;
@@ -645,6 +682,7 @@ section {
 }
 
 .list-card  {
+ 
   display: block;
   width: 370px;
   height: 404px;
@@ -670,4 +708,3 @@ section {
   margin-bottom: 0px;
 } 
 
- 
