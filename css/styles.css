@@ -705,19 +705,22 @@ position: relative;
   
 }
 
-.img-overlay {
+.img {
+  display: block;
   position: relative;
-  overflow: hidden;
+  overflow-y: hidden;
+  
 }
 
 .card-overlay {
   position: absolute;
-  /* right: 0; */
-  top: 0;
   
-  width: 370px;
-  transform: translateY(100%);
-  transition: transform 2s;
+  
+  bottom: 0;
+  max-width: 370px;
+  
+  transform: translateY(294px);
+  transition: transform 250ms;
   background: rgba(33, 150, 243, 0.9);
   
 }
@@ -727,6 +730,7 @@ position: relative;
 }
 
 .text-card {
+  
  padding: 63px 24px;
  font-weight: 400;
  font-size: 18px;
